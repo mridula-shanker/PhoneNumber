@@ -8,8 +8,7 @@ public class PhoneNumber
 		Scanner in = new Scanner (System.in);
 		
 		System.out.print("Enter your 10 digit phone number: ");
-		int phno = in.nextInt();
-		String teleno = ""+phno;
+		String teleno = in.nextLine();
 		System.out.print("(" + teleno.substring (0,3)+ ")" + teleno.substring(3,6)+"-"+teleno.substring(6)+"\n");
 		String first = teleno.substring(0,3);
 		String middle = teleno.substring(3,6);
